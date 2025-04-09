@@ -112,7 +112,7 @@ function handleSocketIO(io) {
 
             socket.on('eventFromClient_force', (data) => {
                 dboperation_socketio.findDataSocketFull('eventFromServer', io, true, apiSettings.realtimeLimit);
-            });
+             });
 
             socket.on('changeLimitTopRanking', (newLimit) => {
                 console.log(`Received new limit TOPRANKING from UI: ${newLimit}`);
